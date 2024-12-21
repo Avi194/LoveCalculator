@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(istockphoto-909138616-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Ensure background stays centered */
+    font-family: "Love Ya Like A Sister", serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    height: 100%;
+}
+
+h1 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 30px;
+}
+
+.tittle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Love Ya Like A Sister", serif;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow inputs to stack on smaller screens */
+}
+
+.inputs input {
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 5px;
+    background-color: white; /* White input box */
+    color: black; /* Black text */
+    font-size: 16px;
+    width: 300px; /* Adjust width as needed */
+    height: 50px;
+    padding: 6px 10px;
+    margin: 10px;
+}
+
+input::placeholder {
+    text-align: center;
+    color: black;
+}
+
+.butt {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.butt button {
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.butt button:hover {
+    background-color: rgb(108, 0, 108);
+    color: rgb(255, 221, 0);
+    cursor: pointer;
+}
+
+.result {
+    font-family: "Love Ya Like A Sister", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.result p {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        justify-content: flex-start; /* Align top elements */
+        height: auto; /* Allow the body to grow with content */
+    }
+
+    .tittle {
+        font-size: 25px;
+        flex-direction: column; /* Stack title and input field */
+        text-align: center;
+    }
+
+    .inputs input {
+        width: 250px;
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .butt button {
+        font-size: 18px;
+        width: 240px;
+        height: 50px;
+    }
+
+    .result {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        height: auto;
+    }
+
+    .tittle {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .inputs input {
+        width: 220px;
+        font-size: 12px;
+        margin: 8px;
+    }
+
+    .butt button {
+        font-size: 16px;
+        width: 200px;
+        height: 45px;
+    }
+
+    .result {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
